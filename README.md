@@ -13,7 +13,7 @@ Currently the server only supports 200 (OK), 403 (Forbidden), 400 (Bad Request),
 # Use
 1. Clone the repository and create a new folder called "content" in the root of the repository.
 2. Add your content files including the required "index.html", "badrequest.html", and "error.html"
-3. Compile using the Makefile and run the executable with or without optional flags. Default port is 8080 and default document root is the CWD: web_server -port <portno> -document_root <path>
+3. Compile using the Makefile and run the executable with or without optional flags. Default port is 8080 and default document root is the CWD: web_server -port PORT -document_root PATH
 
 # Logging and Testing
 The web server tracks the current number of clients connected and the number of threads used (should be the same) which are periodically printed out to the console. The server has only been tested on a campus linux server, and typically crashes after about ~1000 clients have connected. 
